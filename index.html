@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kimberley Intermodal Freight Terminal</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0a3d62, #1e3799);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 50px 10%;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #0a3d62;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #1e3799;
+}
+
+footer {
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #1e3799;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0a3d62;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ================*/
+/* RESPONSIVENESS  */
+/* =============== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[style*="width: 800px"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+@media (max-width: 1024px) {
+    section {
+        padding: 40px 6%;
+    }
+
+    h2[style] {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    img[style*="margin-left"] {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    section {
+        padding: 30px 5%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 20px 4%;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1 style="color: #f4f6f9;">Kimberley Intermodal Freight Terminal (KIFT)</h1>
+<p>Rebalancing South Africa’s Freight System Through Strategic Road–Rail Integration</p>
+<p><em>Reducing logistics costs. Strengthening rail. Unlocking regional growth.</em></p>
+</header>
+
+<section>
+<h2>Project Overview</h2>
+<div class="card">
+<p>South Africa’s freight system remains road-dominated, increasing logistics costs, road congestion, and environmental impact. The proposed Kimberley Intermodal Freight Terminal integrates road and rail transport to improve efficiency and enable modal shift.</p>
+</div>
+</section>
+
+<section>
+<h2 style="margin-left: 40%;">Project Drivers</h2>
+<div class="card">
+<img src="images/transnet.jpg" style="margin-left: 12%;">
+<p>Click below to view the drivers:</p>
+<button onclick="showRecommendation()">Show Drivers</button>
+<div id="recommendation" class="hidden">
+
+<div class="card">
+<h3>🥇High Logistics Costs</h3>
+<p><span class="highlight">Category:</span> Strategic</p>
+<p>Rail offers cost efficiency for long-distance freight compared to road transport.</p>
+</div>
+
+<div class="card">
+<h3>🥈Rail Underutilisation</h3>
+<p><span class="highlight">Category:</span> Operational</p>
+<p>Intermodal consolidation improves rail load factors and economies of scale.</p>
+</div>
+
+<div class="card">
+<h3>🥉Environmental Commitments</h3>
+<p><span class="highlight">Category:</span> External</p>
+<p>Rail emits significantly less CO₂ per ton-kilometre than road freight.</p>
+</div>
+
+<div class="card">
+<h3>4️⃣Regional Development</h3>
+<p><span class="highlight">Category:</span> Social</p>
+<p>Kimberley can serve as a logistics hub for the Northern Cape.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<h2 style="margin-left: 40%;">Project Constraints</h2>
+<div class="card">
+<p>Large-scale infrastructure projects inherently operate within financial, operational, and regulatory constraints, and the Kimberley Intermodal Freight Terminal is no exception. The identified constraints: capital cost, rail reliability, regulatory approvals, and investor confidence: represent manageable risks rather than barriers to implementation. Effective feasibility analysis requires structured assessment rather than avoidance of complexity. Through phased implementation, governance alignment, and strategic stakeholder coordination, these constraints can be mitigated. Therefore, the project remains viable provided that risk management mechanisms are proactively applied. Central News (May 24, 2025 )</p>
+<button onclick="showConstraints()">Show Constraints</button>
+<div id="constraints" class="hidden">
+<img src="images/table.png" style="margin-left: 24%;">
+</div>
+</div>
+</section>
+
+<section>
+<h2 style="margin-left: 35%;">Requirements Hierarchy</h2>
+<div class="card">
+<img src="images/hierachy%20paragraph.jpg" style="margin-left: 12%">
+<p>The proposed Kimberley Intermodal Freight Terminal is comparable to the planned Port of Gauteng, a R50 billion inland logistics hub designed to relieve congestion along the Durban–Gauteng Freight Corridor. Both projects aim to enhance intermodal integration and improve national freight efficiency. However, the Port of Gauteng operates at a significantly larger financial and operational scale, with national corridor impact, whereas the Kimberley terminal is regionally focused and developmental in nature. While the Port of Gauteng is positioned as a large-scale logistics transformation initiative, the Kimberley project represents a strategic regional intervention supporting modal shift and rail utilisation within the Northern Cape. Port of Gauteng White (2025)</p>
+<button onclick="showRequirements()">Show Hierarchy</button>
+<div id="requirements" class="hidden">
+<div class="card">
+<ul style="color: black; font-size: 20px">
+<li>Large-Scale Infrastructure Project</li>
+<li>High Complexity</li>
+<li>Strategic National Impact</li>
+</ul>
+<img src="images/hierachy.png" style="width: 800px; margin-left: 5%">
+<p>The proposed Kimberley Intermodal Freight Terminal is comparable to the planned Port of Gauteng, a R50 billion inland logistics hub designed to relieve congestion along the Durban–Gauteng Freight Corridor. Both projects aim to enhance intermodal integration and improve national freight efficiency. However, the Port of Gauteng operates at a significantly larger financial and operational scale, with national corridor impact, whereas the Kimberley terminal is regionally focused and developmental in nature. While the Port of Gauteng is positioned as a large-scale logistics transformation initiative, the Kimberley project represents a strategic regional intervention supporting modal shift and rail utilisation within the Northern Cape. Port of Gauteng White (2025)</p>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2 style="margin-left: 35%;">Stakeholder Analysis</h2>
+<div class="card">
+<img src="images/stake%20holder%20analysis.jpg" style="margin-left: 12%; display: block">
+<button onclick="showStakeholders()" style="margin-top: 3%;">Show Stakeholder Analysis</button>
+<div id="stakeholder" class="hidden">
+<div class="card">
+<img src="images/stakeholder%20analysis2.png" style="width: 800px; margin-left: 5%">
+<p>The Power–Interest Grid and Stakeholder Conflict Diagram illustrate the strategic positioning and interaction of key actors within the Kimberley Intermodal Freight Terminal project. The grid categorises stakeholders according to their relative power and interest, highlighting investors and rail operators as high-power, high-interest actors requiring close management, while local government is positioned as high power but comparatively lower operational interest, necessitating satisfaction-oriented engagement. The trucking industry and local community are shown as stakeholders with varying influence but significant interest, reinforcing the importance of communication and consultation strategies. The conflict diagram further maps potential tensions related to modal shift, job displacement, and regulatory risk allocation, reflecting common dynamics observed in large-scale logistics infrastructure projects. Such structured stakeholder mapping aligns with industry best practice, where power–interest analysis and conflict anticipation are considered essential for infrastructure governance and risk mitigation (Project Management Institute, 2021; World Bank, 2018).</p>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2 style="margin-left: 35%;">Feasibility Evaluation</h2>
+<div class="card">
+<img src="images/feasibility.png" style="width: 800px; margin-left: 5%">
+</div>
+</section>
+
+<footer>
+<p>Transportation Management | Feasibility Assessment Project | 2026</p>
+</footer>
+
+<script>
+function showRecommendation() {
+    document.getElementById("recommendation").classList.toggle("hidden");
+}
+function showConstraints() {
+    document.getElementById("constraints").classList.toggle("hidden");
+}
+function showRequirements() {
+    document.getElementById("requirements").classList.toggle("hidden");
+}
+function showStakeholders() {
+    document.getElementById("stakeholder").classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
